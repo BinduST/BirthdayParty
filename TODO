@@ -1,0 +1,37 @@
+Build a library
+
+Print Labels on Invitation Card
+    Given a list of records
+        Input Format:-
+            firstName,lastName,gender,age,city,state,country
+    Output format:-
+        a.Mr/Ms First Last
+        b.Mr/Ms Last First
+        Prefix -
+            Male - Mr
+            Female - Ms
+        c.Mr/Ms First Last country
+        d.Mr/Ms Last First country
+
+-----------------------------------------------------------
+
+$ cat records.txt
+    firstName,lastName,gender,age,city,state,country
+
+Usages:-
+    $ ./LabelPrinter -f records.txt
+
+    $ ./LabelPrinter --firstLast records.txt
+
+    $ ./LabelPrinter -l records.txt
+
+    $ ./LabelPrinter --lastFirst records.txt
+
+    $ ./LabelPrinter -fc records.txt
+
+    $ ./LabelPrinter --firstLastCountry records.txt
+
+    $ ./LabelPrinter -lc records.txt
+
+    $ ./LabelPrinter --lastFirstCountry records.txt
+
